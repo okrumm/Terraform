@@ -1,0 +1,12 @@
+# Copy to terraform.tfvars and adjust. terraform.tfvars is git-ignored.
+node_name = "pve"
+hostname  = "ct-demo"
+
+bridge       = "vmbr0"
+vlan_id      = 17
+ipv4_address = "dhcp"
+ipv6_address = "auto" # SLAAC
+
+ssh_public_keys = [
+  "ssh-ed25519 AAAA... user@host",
+]
